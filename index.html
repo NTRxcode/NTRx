@@ -1,20 +1,47 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>NTRx</title>
+    <link rel=”stylesheet“ href=”style.css“>
 </head>
 
 <body>
 
-<h1>NTRx</h1>
+<div class=”container“>
 
-<p>AI Learning Assistant</p>
+    <h1>NTRx</h1>
 
-<input type=”text“ placeholder=”พิมพ์สิ่งที่อยากเรียน...“>
+    <p>AI Learning Assistant</p>
 
-<button>
-สร้างบทเรียน
-</button>
+    <textarea placeholder=”พิมพ์สิ่งที่อยากเรียน...“></textarea>
+
+    <br><br>
+
+    <input type=”file“ accept=”image/*“>
+
+    <input type=”file“ accept=”.pdf“>
+
+    <br><br>
+
+    <button onclick=”createLesson()“>
+        สร้างบทเรียน
+    </button>
+
+    <div class=”result“>
+
+        <h2>บทเรียน</h2>
+
+        <p>
+            AI จะสรุปเนื้อหาที่คุณต้องการเรียนตรงนี้
+        </p>
+
+    </div>
+
+</div>
+
+<script src=”script.js“></script>
 
 </body>
+
 </html>
