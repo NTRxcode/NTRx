@@ -1,3 +1,4 @@
+alert(”ทำงานแล้ว“);
 function createLesson() {
 
     let text = document.querySelector(”textarea“).value;
